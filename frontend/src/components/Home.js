@@ -1,8 +1,9 @@
 import { useMemo, useEffect, useState } from 'react';
 import AxiosInstance from './axios';
-import { MaterialReactTable,useMaterialReactTable } from 'material-react-table';
+import { MaterialReactTable} from 'material-react-table';
 import { Box, IconButton } from '@mui/material';
 import { Edit as EditIcon, Delete as DeleteIcon } from '@mui/icons-material';
+import {Link} from 'react-router-dom';
 
 const Home = () => {
   const [myData, setMyData] = useState([]);
@@ -12,7 +13,6 @@ const Home = () => {
     AxiosInstance.get('recipe/')
       .then((res) => {
         setMyData(res.data);
-        console.log(res.data);
         setLoading(false);
       })
       .catch((err) => {
@@ -36,6 +36,8 @@ const Home = () => {
             <IconButton
               color="secondary"
               onClick={() => console.log('Edit', row.original)}
+              component = {Link} to = {`/edit/${row.original.id}`}
+
             >
               <EditIcon />
             </IconButton>

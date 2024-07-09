@@ -13,7 +13,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import HomeIcon from '@mui/icons-material/Home';
 import InfoIcon from '@mui/icons-material/Info';
-import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
+import AddBoxIcon from '@mui/icons-material/AddBox';
 import MenuIcon from '@mui/icons-material/Menu';
 import { IconButton } from '@mui/material';
 
@@ -53,7 +53,7 @@ export default function NavBar(props) {
           <ListItem disablePadding>
             <ListItemButton component={Link} to="/create" selected={"/create" === path}>
               <ListItemIcon>
-                <AddCircleOutlineIcon />
+                <AddBoxIcon />
               </ListItemIcon>
               <ListItemText primary={"Create"} />
             </ListItemButton>
