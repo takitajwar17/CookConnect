@@ -8,7 +8,7 @@ import NavBar from './components/NavBar';
 
 
 function App() {
-  const myWidth = 220;
+  const myWidth = 240;
 
   return (
     <div className="App">
