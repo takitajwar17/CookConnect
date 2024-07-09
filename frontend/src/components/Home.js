@@ -44,6 +44,7 @@ const Home = () => {
             <IconButton
               color="error"
               onClick={() => console.log('Delete', row.original)}
+              component = {Link} to = {`/delete/${row.original.id}`}
             >
               <DeleteIcon />
             </IconButton>
