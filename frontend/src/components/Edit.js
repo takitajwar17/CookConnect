@@ -78,7 +78,7 @@ const Edit = () => {
           sx={{
             display: 'flex',
             width: '83%',
-            backgroundColor: '#3b5573',
+            backgroundColor: '#1BC4CB',
             alignItems: 'center',
             padding: '10px',
             borderRadius: '5px',
