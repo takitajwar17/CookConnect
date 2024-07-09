@@ -88,7 +88,7 @@ export default function NavBar(props) {
                 <MenuIcom />
             </IconButton>
           <Typography variant="h6" noWrap component="div">
-            My Application
+            CookConnect
           </Typography>
         </Toolbar>
       </AppBar>
