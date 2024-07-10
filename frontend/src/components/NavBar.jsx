@@ -30,7 +30,7 @@ export default function NavBar(props) {
   const myDrawer = (
     <div>
       <Toolbar />
-      <Box sx={{ overflow: 'auto' }}>
+      <Box sx={{ overflow: 'auto', paddingTop: '12px'}}>
         <List>
           <ListItem disablePadding>
             <ListItemButton component={Link} to="/" selected={"/" === path}>
@@ -66,7 +66,7 @@ export default function NavBar(props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1, backgroundColor: '#4d799a' }}>
+      <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1, backgroundColor: '#4d799a', padding: '10px'}}>
         <Toolbar>
           <IconButton 
             onClick={changeOpenStatus} 
