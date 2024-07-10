@@ -66,7 +66,7 @@ export default function NavBar(props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1, backgroundColor: '#4d799a', padding: '10px'}}>
+      <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1, backgroundColor: '#4d799a', padding: '7px'}}>
         <Toolbar>
           <IconButton 
             onClick={changeOpenStatus} 
@@ -77,7 +77,7 @@ export default function NavBar(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap component="div">
+          <Typography variant="h5" noWrap component="div">
             COOKCONNECT
           </Typography>
         </Toolbar>
