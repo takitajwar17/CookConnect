@@ -40,15 +40,6 @@ export default function NavBar(props) {
               <ListItemText primary={"Home"} />
             </ListItemButton>
           </ListItem>
-          
-          <ListItem disablePadding>
-            <ListItemButton component={Link} to="/about" selected={"/about" === path}>
-              <ListItemIcon>
-                <InfoIcon />
-              </ListItemIcon>
-              <ListItemText primary={"About"} />
-            </ListItemButton>
-          </ListItem>
 
           <ListItem disablePadding>
             <ListItemButton component={Link} to="/create" selected={"/create" === path}>
